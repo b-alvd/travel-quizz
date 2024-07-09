@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <section id="game">
+            <div id="game_content">
+                <img id="question_image" src="" alt="Image d'un pays aléatoire">
+                <div id="response">
+                    <input type="text" id="responseInput" placeholder="Entrez votre réponse">
+                    <button type="submit" id="responseSubmit" disabled>Soumettre la réponse</button>
+                </div>
+                <div class="hint">
+                    <p>Indice :</p>
+                    <p id="hint_display">Aucun indice demandé</p>
+                </div>
+                <div id="infos">
+                    <div id="try">
+                        <p>Nombre de tentatives réstantes :</p>
+                        <p id="attempts"></p>
+                    </div>
+                    <button id="hint"> <img class="hint_img" src="imgs/hint.svg" alt="Image ampoule indice"> Demander un indice</button>
+                </div>
+            </div>
+            <div id="game_stats">
+                <div id="rules">
+                    <h1>Les règles</h1>
+                    <p>Une image apparaît, vous avez trois chances pour deviner le pays. Un pays n'apparaît qu'une seule fois par manche.<br><br> Une réponse juste sans indice = +10 points,<br> une réponse juste avec indice = +5 points,<br> une réponse fausse = +0 points,<br> une réponse fausse avec indice = -5 points.</p>
+                </div>
+                <div id="stats">
+                    <div id="points">
+                        <h1>Vos points</h1>
+                        <p id="display_points"></p>
+                    </div>
+                    <div id="responses">
+                        <h1>Vos réponses</h1>
+                        <div id="responses_container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
